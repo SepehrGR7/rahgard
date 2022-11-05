@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'IranYekan';
+  src: url('./assets/fonts/IranYekanWebRegular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanBold';
+  src: url('./assets/fonts/IranYekanWebBold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranYekanExtra';
+  src: url('./assets/fonts/IranYekanWebExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'YekanBakhExtra';
+  src: url('./assets/fonts/YekanBakhNew-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'YekanBakhHeavy';
+  src: url('./assets/fonts/YekanBakh-Heavy.ttf');
+  font-weight: 800;
+}
+
+body {
+  font-family: 'IranYekan', -apple-system, BlinkMacSystemFont, sans-serif;
+}

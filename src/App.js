@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { useDisclosure, ChakraProvider } from '@chakra-ui/react'
-import { Home, About, Projects, Services, Contact } from './screens'
+import { Home, About, Projects, Services, Contact } from './pages'
 import { Header, Footer } from './components/layout'
 import { Menu } from './components'
 import { theme } from './constants'

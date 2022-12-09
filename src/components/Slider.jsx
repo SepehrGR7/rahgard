@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, EffectCoverflow } from 'swiper'
+import { Navigation } from 'swiper'
 import { urlFor } from '../client'
+import { useMediaQuery } from '@chakra-ui/react'
 import useClient from '../hooks/useClient'
 import SliderOverlay from './SliderOverlay'
 import 'swiper/css/navigation'
@@ -9,33 +10,36 @@ import 'swiper/css'
 const Slider = () => {
   const slides = useClient('slides')
 
+  const [isMd] = useMediaQuery('(min-width: 1100px)')
+
   return (
-    <div className='pt-24 '>
+    <div
+      className={`${!isMd ? 'pt-20' : null}`}
+      style={{ backgroundColor: '#1a202c' }}
+    >
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
-        speed={700}
+        speed={800}
         navigation
-        modules={[Navigation, EffectCoverflow]}
-        effect='coverflow'
+        modules={[Navigation]}
       >
         {slides.map(slide => (
           <SwiperSlide key={slide._id}>
-            <img src={urlFor(slide.imageUrl)} alt='road construction' />
+            {isMd ? (
+              <div className='h-screen'>
+                <img
+                  src={urlFor(slide.imageUrl)}
+                  alt='road construction'
+                  className='object-fill'
+                />
+              </div>
+            ) : (
+              <img src={urlFor(slide.imageUrl)} alt='road construction' />
+            )}
             <SliderOverlay title={slide.title} />
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-          <SliderOverlay title='مدرن و مجهز در تجهیزات راه سازی' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={images.img1} alt='road construction' />
-          <SliderOverlay title='مهندسین خلاق و با تجربه' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={images.img1} alt='road construction' />
-          <SliderOverlay title='چهار قرن تجربه ثابت  شده' />
-        </SwiperSlide> */}
       </Swiper>
     </div>
   )

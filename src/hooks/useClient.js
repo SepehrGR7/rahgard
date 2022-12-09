@@ -7,7 +7,6 @@ const useClient = doc => {
   useEffect(() => {
     const query = `*[_type == "${doc}"]`
     client.fetch(query).then(data => setDocument(data))
-    // eslint-disable-next-line
   }, [])
 
   return document

@@ -10,13 +10,13 @@ const Navbar = ({ title, onMenuOpen }) => {
   return (
     <nav className='fixed z-30 w-full shadow-lg bg-warning'>
       <div
-        className={`container flex justify-between p-6 mx-auto navbar ${
+        className={`container relative flex justify-center p-4 md:p-6 mx-auto navbar ${
           isMd && 'md:justify-start'
         }`}
       >
         <div>
           <Link to='/'>
-            <h1 className='flex items-center text-2xl font-extrabold md:text-3xl lg:text-4xl'>
+            <h1 className='flex items-center text-2xl font-extrabold translate-x-2 md:text-3xl lg:text-4xl'>
               <FaRoad size='3rem' className='ml-3 company-name' />
               {title}
             </h1>
@@ -27,7 +27,10 @@ const Navbar = ({ title, onMenuOpen }) => {
             <NavbarLinks />
           </div>
         ) : (
-          <button className='px-2 btn btn-ghost' onClick={onMenuOpen}>
+          <button
+            className='absolute px-2 right-4 btn btn-ghost '
+            onClick={onMenuOpen}
+          >
             <IoMenu size='2rem' />
           </button>
         )}

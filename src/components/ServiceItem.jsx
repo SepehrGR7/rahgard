@@ -13,10 +13,8 @@ const ServiceItem = ({ reverse, title, description, image }) => {
         />
         <div className='flex flex-col items-start justify-center order-2 px-10 mx-auto md:p-0 lg:order-1'>
           <h3 className='mb-3 text-xl font-bold'>{title}</h3>
-          <p className='mb-10 font-normal text-justify md:text-start'>
-            {description}
-          </p>
-          <Link to='/sevices' className='font-normal btn btn-warning lg:font-bold '>
+          <p className='mb-10 font-normal text-justify'>{description}</p>
+          <Link to='/services' className='font-normal btn btn-warning lg:font-bold '>
             جزئیات بیشتر
           </Link>
         </div>

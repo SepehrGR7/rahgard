@@ -1,16 +1,10 @@
-import { useState, useEffect } from 'react'
-import { urlFor, client } from '../client'
-import TraitItem from './TraitItem'
+import useClient from '../hooks/useClient'
+import { urlFor } from '../client'
 import { images } from '../constants'
+import TraitItem from './TraitItem'
 
 const Traits = () => {
-  const [traits, setTraits] = useState([])
-
-  useEffect(() => {
-    const query = '*[_type == "traits"]'
-
-    client.fetch(query).then(data => setTraits(data))
-  }, [])
+  const traitData = useClient('traits')
 
   return (
     <section className='my-12 lg:my-20'>
@@ -21,7 +15,7 @@ const Traits = () => {
         <img src={images.divider} alt='divider' className='w-64 md:w-80' />
       </div>
       <div className='grid grid-cols-1 gap-10 py-10 mx-auto md:gap-y-20 gap- md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:px-10'>
-        {traits.map(trait => (
+        {traitData.map(trait => (
           <TraitItem
             key={trait._id}
             image={urlFor(trait.imageUrl)}

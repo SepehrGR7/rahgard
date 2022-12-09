@@ -1,7 +1,9 @@
+import { OurServices } from '../components/'
+
 const Services = () => {
   return (
     <div>
-      <h1>Services</h1>
+      <OurServices />
     </div>
   )
 }

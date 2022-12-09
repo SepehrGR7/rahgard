@@ -1,4 +1,4 @@
-import { Slider, Traits, Services, Projects } from '../components'
+import { Slider, Traits, Services, ProjectsSection } from '../components'
 
 const Home = () => {
   return (
@@ -6,7 +6,7 @@ const Home = () => {
       <Slider />
       <Traits />
       <Services />
-      <Projects />
+      <ProjectsSection />
     </div>
   )
 }

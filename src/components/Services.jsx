@@ -16,11 +16,11 @@ const Services = () => {
       </div>
       {servicesData.map((service, index) => (
         <ServiceItem
-          key={service._id}
+          key={index}
           title={service.title}
           description={service.description}
           image={urlFor(service.imageUrl)}
-          reverse={index === 1 && true}
+          reverse={index % 2 !== 0 && true}
         />
       ))}
       {}

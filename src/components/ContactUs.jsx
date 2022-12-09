@@ -4,7 +4,7 @@ import { images } from '../constants'
 
 const ContactUs = () => {
   return (
-    <div className='pt-24'>
+    <div className='pt-20'>
       <PageIndicator page='تماس با ما' bg={images.img2} />
       <div className='grid grid-cols-1 px-10 my-20 lg:grid-cols-2 lg:px-40'>
         <div className='mb-10 lg:m-0'>

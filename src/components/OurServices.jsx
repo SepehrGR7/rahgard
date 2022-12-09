@@ -10,7 +10,7 @@ const OurServices = () => {
   console.log(servicesData)
 
   return (
-    <div className='pt-24'>
+    <div className='pt-20'>
       <PageIndicator page='خدمات' bg={images.img3} />
       <div className='my-12'>
         <div className='px-12 mb-10'>

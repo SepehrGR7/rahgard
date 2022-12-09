@@ -3,7 +3,7 @@ import { images } from '../constants'
 
 const AboutUs = () => {
   return (
-    <div className='pt-24'>
+    <div className='pt-20'>
       <PageIndicator page='درباره ما' bg={images.img1} />
       <div className='grid grid-cols-1 my-12 md:px-32 xl:px-40 xl:grid-cols-2'>
         <div className='px-12 mb-10'>

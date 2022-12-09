@@ -7,7 +7,7 @@ const AboutUs = () => {
       <PageIndicator page='درباره ما' bg={images.img1} />
       <div className='grid grid-cols-1 my-12 md:px-32 xl:px-40 xl:grid-cols-2'>
         <div className='px-12 mb-10'>
-          <h3 className='mb-8 text-3xl font-bold'>مختصری درباره راه گرد بندر</h3>
+          <h3 className='mb-8 text-2xl font-bold'>مختصری درباره راه گرد بندر</h3>
           <p className='text-justify'>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
             طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان

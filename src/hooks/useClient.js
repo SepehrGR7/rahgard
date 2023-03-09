@@ -7,7 +7,7 @@ const useClient = doc => {
   useEffect(() => {
     const query = `*[_type == "${doc}"]`
     client.fetch(query).then(data => setDocument(data))
-  })
+  }, [doc])
 
   return document
 }

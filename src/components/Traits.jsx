@@ -20,6 +20,7 @@ const Traits = () => {
             key={trait._id}
             image={urlFor(trait.imageUrl)}
             title={trait.title}
+            emoji={trait.emoji}
             description={trait.description}
           />
         ))}

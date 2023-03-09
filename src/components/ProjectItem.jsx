@@ -6,7 +6,7 @@ const ProjectItem = ({ project, img }) => {
       <img
         src={img}
         alt='project example'
-        className='object-cover w-full mb-6 rounded-b-none rounded-2xl max-h-60'
+        className='object-cover w-full mb-6 rounded-b-none rounded-2xl max-h-52'
       />
       <div className='px-4 pb-4'>
         <div className='mb-6'>

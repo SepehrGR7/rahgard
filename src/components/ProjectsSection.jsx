@@ -20,9 +20,7 @@ const ProjectsSection = () => {
         {latestProjects.map(project => (
           <ProjectItem
             key={project._id}
-            projectName={project.name}
-            projectDesc={project.description}
-            slug={project.slug.current}
+            project={project}
             img={urlFor(project.imageUrl)}
           />
         ))}

@@ -7,8 +7,6 @@ import Service from './Service'
 const OurServices = () => {
   const servicesData = useClient('services')
 
-  console.log(servicesData)
-
   return (
     <div className='pt-20'>
       <PageIndicator page='خدمات' bg={images.img3} />

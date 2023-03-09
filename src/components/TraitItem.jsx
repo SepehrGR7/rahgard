@@ -1,6 +1,6 @@
 const TraitItem = ({ image, title, emoji, description }) => {
   return (
-    <div className='mx-auto transition duration-300 card w-96 md:w-80 glass hover:shadow-xl'>
+    <div className='mx-auto transition duration-300 card w-96 md:w-80 glass'>
       <figure>
         <img src={image} alt='trait' className='object-cover w-full h-40 lg:h-52' />
       </figure>

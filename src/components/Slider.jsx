@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper'
+import { Navigation, Autoplay } from 'swiper'
 import { urlFor } from '../client'
 import { useMediaQuery } from '@chakra-ui/react'
 import useClient from '../hooks/useClient'
@@ -22,7 +22,12 @@ const Slider = () => {
         slidesPerView={1}
         speed={800}
         navigation
-        modules={[Navigation]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false
+        }}
+        loop
+        modules={[Navigation, Autoplay]}
       >
         {slides.map(slide => (
           <SwiperSlide key={slide._id}>

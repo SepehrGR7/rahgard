@@ -3,7 +3,6 @@ import { urlFor } from '../client'
 import PageIndicator from './PageIndicator'
 import ProjectCard from './ProjectCard'
 import { images } from '../constants'
-import { Link } from 'react-router-dom'
 
 const Projects = () => {
   const projectsData = useClient('projects')

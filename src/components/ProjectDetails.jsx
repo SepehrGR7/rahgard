@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { useMediaQuery } from '@chakra-ui/react'
 import { client, urlFor } from '../client'
 import { FiArrowRight, FiCalendar, FiSmile } from 'react-icons/fi'
 import PageIndicator from './PageIndicator'

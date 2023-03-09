@@ -5,7 +5,7 @@ const TraitItem = ({ image, title, emoji, description }) => {
         <img src={image} alt='trait' className='object-cover w-full h-40 lg:h-52' />
       </figure>
       <div className='card-body'>
-        <div className='grid items-center w-12 h-12 mb-3 bg-gray-200 opacity-60 rounded-xl backdrop-blur place-content-center'>
+        <div className='grid items-center w-12 h-12 mb-3 bg-orange-100 rounded-xl backdrop-blur place-content-center'>
           <span className='-mb-1 text-2xl'>{emoji}</span>
         </div>
         <div className='flex items-center'>

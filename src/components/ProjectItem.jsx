@@ -17,7 +17,7 @@ const ProjectItem = ({ projectName, projectDesc, img }) => {
           variant='warning'
           weight={isMd ? 'bold' : 'normal'}
         >
-          مشاهده پروژه ها
+          مشاهده پروژه
         </LinkButton>
       </div>
     </div>

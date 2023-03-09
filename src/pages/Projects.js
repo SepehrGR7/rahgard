@@ -1,7 +1,9 @@
+import { OurProjects } from '../components'
+
 const Projects = () => {
   return (
     <div>
-      <h1>Projects</h1>
+      <OurProjects />
     </div>
   )
 }

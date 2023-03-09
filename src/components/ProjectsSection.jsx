@@ -6,6 +6,8 @@ import { images } from '../constants'
 const ProjectsSection = () => {
   const projectData = useClient('projects')
 
+  const latestProjects = projectData.slice(0, 2)
+
   return (
     <section className='my-20'>
       <div className='flex flex-col items-center mb-12'>
@@ -15,11 +17,12 @@ const ProjectsSection = () => {
         <img src={images.divider} alt='divider' className='w-64 md:w-80' />
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-y-20 lg:gap-0 xl:px-40'>
-        {projectData.map(project => (
+        {latestProjects.map(project => (
           <ProjectItem
             key={project._id}
             projectName={project.name}
             projectDesc={project.description}
+            slug={project.slug.current}
             img={urlFor(project.imageUrl)}
           />
         ))}

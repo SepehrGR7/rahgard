@@ -2,7 +2,7 @@ import LinkButton from './LinkButton'
 
 const ProjectItem = ({ project, img }) => {
   return (
-    <div className='flex flex-col items-center mx-auto transition duration-300 border border-gray-200 rounded-2xl w-96 hover:shadow-xl'>
+    <div className='flex flex-col items-center mx-auto transition duration-300 border border-gray-200 rounded-2xl w-80 md:w-96 hover:shadow-xl'>
       <img
         src={img}
         alt='project example'

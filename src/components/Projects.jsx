@@ -11,7 +11,7 @@ const Projects = () => {
     <div className='pt-20'>
       <PageIndicator page='پروژه ها' bg={images.img3} />
       <div className='my-12'>
-        <div className='grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-10 xl:gap-0 md:grid-cols-2 xl:grid-cols-3'>
           {projectsData.map((project, index) => (
             <ProjectItem
               key={index}

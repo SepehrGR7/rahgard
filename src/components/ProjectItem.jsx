@@ -11,7 +11,7 @@ const ProjectItem = ({ project, img }) => {
       <div className='px-4 pb-4'>
         <div className='mb-6'>
           <h3 className='mb-3 text-2xl font-bold'>{project.name}</h3>
-          <p>{project.description}</p>
+          <p className='leading-7'>{project.description}</p>
         </div>
         <LinkButton to={`/projects/${project.slug.current}`} variant='warning'>
           مشاهده پروژه

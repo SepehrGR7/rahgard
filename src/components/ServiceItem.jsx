@@ -13,7 +13,7 @@ const ServiceItem = ({ reverse, title, description, image }) => {
         />
         <div className='flex flex-col items-start justify-center order-2 px-10 mx-auto md:p-0 lg:order-1'>
           <h3 className='mb-3 text-xl font-bold'>{title}</h3>
-          <p className='mb-10 font-normal text-justify'>{description}</p>
+          <p className='mb-10 font-normal leading-7 text-justify'>{description}</p>
           <Link to='/services' className='font-normal btn btn-warning lg:font-bold '>
             جزئیات بیشتر
           </Link>

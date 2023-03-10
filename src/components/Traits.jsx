@@ -2,12 +2,13 @@ import useClient from '../hooks/useClient'
 import { urlFor } from '../client'
 import { images } from '../constants'
 import TraitItem from './TraitItem'
+import './Traits.css'
 
 const Traits = () => {
   const traitData = useClient('traits')
 
   return (
-    <section className='my-12 lg:my-20'>
+    <section className='px-10 py-20 lg:p-20 trait'>
       <div className='flex flex-col items-center mb-5'>
         <h2 className='mb-6 text-3xl font-bold text-center md:mb-8 md:text-4xl'>
           چرا راه گرد بندر؟

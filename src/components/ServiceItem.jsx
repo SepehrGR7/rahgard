@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const ServiceItem = ({ reverse, title, description, image }) => {
   return (
-    <div className='flex flex-col max-w-xs mx-auto my-20 shadow-lg md:shadow-2xl sm:max-w-md rounded-3xl md:max-w-2xl lg:max-w-5xl xl:max-w-7xl lg:flex-row max-w'>
+    <div className='flex flex-col max-w-xs mx-auto my-20 shadow-lg md:shadow-xl sm:max-w-md rounded-3xl md:max-w-2xl lg:max-w-5xl xl:max-w-7xl lg:flex-row max-w'>
       <img
         src={image}
         alt='service'

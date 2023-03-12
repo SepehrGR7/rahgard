@@ -14,17 +14,19 @@ const Contact = lazy(() => import('./pages/Contact'))
 function App() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
-  const title = 'راه گرد بندر'
-
   const onMenuOpen = () => onOpen()
 
   const onMenuClose = () => onClose()
 
   return (
     <ChakraProvider theme={theme}>
-      <Header title={title} onMenuOpen={onMenuOpen} onMenuClose={onMenuClose} />
+      <Header
+        title='راه گرد بندر'
+        onMenuOpen={onMenuOpen}
+        onMenuClose={onMenuClose}
+      />
       <Menu
-        title={title}
+        title='راه گرد بندر'
         placement='right'
         onClose={onClose}
         isOpen={isOpen}
@@ -40,7 +42,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </Suspense>
-      <Footer title={title} />
+      <Footer title='راه گرد بندر' />
     </ChakraProvider>
   )
 }

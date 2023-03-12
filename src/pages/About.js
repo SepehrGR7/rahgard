@@ -1,10 +1,6 @@
 import AboutUs from '../components/AboutUs'
 
 const About = () => {
-  return (
-    <div>
-      <AboutUs />
-    </div>
-  )
+  return <AboutUs />
 }
 export default About

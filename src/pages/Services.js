@@ -1,10 +1,6 @@
 import { OurServices } from '../components/'
 
 const Services = () => {
-  return (
-    <div>
-      <OurServices />
-    </div>
-  )
+  return <OurServices />
 }
 export default Services

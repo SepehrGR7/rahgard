@@ -1,6 +1,6 @@
 const TraitItem = ({ image, title, emoji, description }) => {
   return (
-    <div className='mx-auto my-5 transition duration-300 shadow-xl border-gray200 md:my-0 card w-80 md:w-72 backdrop-blur-lg '>
+    <div className='max-w-xs mx-auto my-5 transition duration-300 shadow-xl border-gray200 md:my-0 card md:w-72 backdrop-blur-lg '>
       <figure>
         <img src={image} alt='trait' className='object-cover w-full h-44' />
       </figure>

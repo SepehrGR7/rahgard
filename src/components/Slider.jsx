@@ -34,7 +34,7 @@ const Slider = () => {
                 <img
                   src={urlFor(slide.imageUrl)}
                   alt='road construction'
-                  className='object-fill'
+                  className='object-cover w-full'
                 />
               </div>
             ) : (

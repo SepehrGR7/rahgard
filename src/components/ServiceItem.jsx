@@ -10,7 +10,7 @@ const ServiceItem = ({ reverse, title, description, image }) => {
           reverse ? 'lg:order-1 lg:rounded-l-none' : 'lg:order-2 lg:rounded-r-none'
         } rounded-none rounded-t-3xl lg:rounded-3xl mx-auto h-auto object-cover lg:w-1/2`}
       />
-      <div className='flex flex-col items-start justify-center order-2 p-8 mx-auto text-sm sm:p-8 md:px-10 md:py-14 lg:order-1'>
+      <div className='flex flex-col items-start justify-center order-2 p-8 pb-6 mx-auto text-sm sm:p-8 md:px-10 md:py-14 lg:order-1'>
         <h3 className='mb-3 text-base font-bold md:text-xl'>{title}</h3>
         <p className='mb-10 font-normal leading-7 text-justify'>{description}</p>
         <Link

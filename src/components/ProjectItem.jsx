@@ -13,7 +13,11 @@ const ProjectItem = ({ project, img }) => {
           <h3 className='mb-3 text-2xl font-bold'>{project.name}</h3>
           <p className='leading-7'>{project.description}</p>
         </div>
-        <LinkButton to={`/projects/${project.slug.current}`} variant='warning'>
+        <LinkButton
+          to={`/projects/${project.slug.current}`}
+          variant='warning'
+          width='full'
+        >
           مشاهده پروژه
         </LinkButton>
       </div>

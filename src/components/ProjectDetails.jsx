@@ -50,10 +50,10 @@ const ProjectDetails = () => {
                 </div>
                 <p className='lg:text-lg'>{project.description}</p>
                 <button
-                  className='mt-10 text-lg font-normal md:font-bold btn btn-warning'
+                  className='mt-10 font-normal md:font-bold btn btn-warning'
                   onClick={() => navigate(-1)}
                 >
-                  <FiArrowRight className='ml-2 text-xl' />
+                  <FiArrowRight className='ml-1.5 text-lg md:ml-2 md:text-xl' />
                   بازگشت
                 </button>
               </div>
